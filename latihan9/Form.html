@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to Make Form</title>
+</head>
+<body>
+<table border="0" cellspadding="10" cellspacing="0">
+<!-- Contoh pembuatan form, elemennya yaitu; input, textarea, select, button, label -->
+<!-- tag input berisikan; text, password, radio, checkbox, submit, reset, dan button dan atributnya type="" -->
+	<form>
+
+		<tr>
+			<td><label for="username">Username:</label></td>
+			<td><input type="text" id="username"></td>
+		</tr>
+	<!-- id dan for harus sama!! -->
+	<br>
+
+		<tr>
+		<td><label for="password">Password:</label></td>
+		<td><input type="password" id="password"></td>
+		</tr>
+	<br>
+		<tr>
+			<td colspan="2" align="center"><input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+			<input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">Perempuan</label></td>
+		</tr>
+	<!-- Kenapa isi name? karena supaya pada saat user klik jenis kelamin user hanya bisa klik salah satunya bukan keduanya. -->
+	<br>
+		<tr>
+			<td colspan="2"><input type="checkbox" id="dota2"><label for="dota2">Dota 2</label>
+			<input type="checkbox" id="gta5"><label for="gta5">GTA 5</label>
+			<input type="checkbox" id="pes2022"><label for="pes2022">Pes 2022</label>
+			<input type="checkbox" id="farcry5"><label for="farcry5">Far Cry 5</label>
+			<input type="checkbox" id="sifu2"><label for="sifu2">Sifu</label></td>
+		</tr>
+	<br>
+
+		<tr>
+			<td>Combo Box:</td>
+			<td>
+				<select>
+					<option>JAM</option>
+					<option>Jam 1</option>
+					<option>Jam 2</option>
+					<option>Jam 3</option>
+					<option>Jam 4</option>
+					<option>Jam 5</option>
+					<option>Jam 6</option>
+					<option>Jam 7</option>
+					<option>Jam 8</option>
+					<option>Jam 9</option>
+					<option>Jam 10</option>
+				</select>
+			</td>
+		</tr>
+
+	<br>
+		<tr>
+		<td><label for="textarea">Text Area:</label></td>
+		<td><textarea></textarea></td>
+		</tr>
+	<br>
+		<tr>
+		<td colspan="2" align="center"><button type="reset">RESET</button>
+		<button type="submit">SEND!</button>
+		</td>
+		</tr>
+	</form>
+</table>
+</body>
+</html>
